@@ -1,0 +1,15 @@
+pluginManagement {
+  repositories {
+    mavenLocal()
+    maven {
+        url = "${registryBaseUrl}/repository"
+        credentials {
+            username 'username'
+            password 'password'
+        }
+    }
+    gradlePluginPortal()
+  }
+}
+
+rootProject.name = 'renovate-repro-2'
